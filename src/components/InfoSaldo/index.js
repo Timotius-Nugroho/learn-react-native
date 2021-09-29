@@ -1,5 +1,11 @@
 import React from 'react';
-import {StyleSheet, Text, View, Dimensions} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Dimensions,
+  TouchableOpacity,
+} from 'react-native';
 import {IconAddSaldo, IconGetPoint} from '../../assets/icons/index';
 
 const InfoSaldo = () => {
@@ -16,14 +22,14 @@ const InfoSaldo = () => {
         </View>
       </View>
       <View style={styles.saldoIconContainer}>
-        <View style={styles.iconSaldo}>
+        <TouchableOpacity style={styles.iconSaldo}>
           <IconAddSaldo />
           <Text style={styles.iconText}>Add saldo</Text>
-        </View>
-        <View style={styles.iconSaldo}>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.iconSaldo}>
           <IconGetPoint />
           <Text style={styles.iconText}>Get saldo</Text>
-        </View>
+        </TouchableOpacity>
       </View>
     </View>
   );

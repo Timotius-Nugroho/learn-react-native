@@ -3,16 +3,17 @@ import {
   StyleSheet,
   Text,
   View,
+  ScrollView,
   ImageBackground,
   Image,
   Dimensions,
 } from 'react-native';
-import {InfoSaldo} from '../../components/index';
+import {InfoSaldo, Layanan, PesananActive} from '../../components/index';
 import {HeaderBg, HomeLogo} from '../../assets/images';
 
-export default function index() {
+export default function Home() {
   return (
-    <View>
+    <ScrollView>
       <ImageBackground source={HeaderBg} style={styles.headerbg}>
         <Image source={HomeLogo} style={styles.homeLogo} />
         <View style={styles.textWelocome}>
@@ -21,7 +22,9 @@ export default function index() {
         </View>
       </ImageBackground>
       <InfoSaldo />
-    </View>
+      <Layanan />
+      <PesananActive />
+    </ScrollView>
   );
 }
 

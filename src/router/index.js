@@ -11,7 +11,7 @@ const MainApp = () => {
   return (
     <Tab.Navigator tabBar={props => <ButtomNavigator {...props} />}>
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Pesanan" component={Pesanan} />
+      <Tab.Screen name="Pesanan" component={Pesanan} initialParams={{id: 1}} />
       <Tab.Screen name="Akun" component={Akun} />
     </Tab.Navigator>
   );

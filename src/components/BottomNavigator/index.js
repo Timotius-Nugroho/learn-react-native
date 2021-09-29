@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import {TabItem} from '../../components';
+import TabItem from '../TabItem';
 
 const BottomNavigator = ({state, descriptors, navigation}) => {
   return (
@@ -24,7 +24,11 @@ const BottomNavigator = ({state, descriptors, navigation}) => {
           });
 
           if (!isFocused && !event.defaultPrevented) {
-            navigation.navigate({name: route.name, merge: true});
+            navigation.navigate({
+              name: route.name,
+              merge: true,
+              params: {id: 1},
+            });
           }
         };
 

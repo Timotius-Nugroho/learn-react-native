@@ -1,5 +1,6 @@
 import ButtomNavigator from './BottomNavigator';
-import TabItem from './TabItem';
 import InfoSaldo from './InfoSaldo';
+import Layanan from './Layanan';
+import PesananActive from './PesananActive';
 
-export {ButtomNavigator, TabItem, InfoSaldo};
+export {ButtomNavigator, InfoSaldo, Layanan, PesananActive};
